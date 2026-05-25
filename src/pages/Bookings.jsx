@@ -44,7 +44,7 @@ function Bookings() {
       try {
 
         await axios.delete(
-"https://cinibook-pro.onrender.com/bookings/${id}"    );
+"https://cinibook-pro.onrender.com/bookings/${booking._id}"    );
 
         fetchBookings();
 

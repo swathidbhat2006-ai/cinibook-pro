@@ -58,7 +58,27 @@ const fetchBookings =
         }
       );
 
-      setBookedSeats(seats);
+      const filteredBookings =
+  bookings.filter(
+    (booking) =>
+      booking.movie === movie.title &&
+      booking.timing === timing
+  );
+
+let seats = [];
+
+filteredBookings.forEach(
+  (booking) => {
+
+    seats = [
+      ...seats,
+      ...booking.seats,
+    ];
+
+  }
+);
+
+setBookedSeats(seats);
 
     } catch (error) {
 
