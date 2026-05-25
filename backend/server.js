@@ -78,12 +78,12 @@ Total: ₹${req.body.total}
       // Don't fail the booking if email fails
       console.log("Email error (non-fatal):", emailError.message);
     }
-
+*/
     res.status(201).json({ message: "Booking Saved 😭🔥" });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
-});*/
+});
 
 /* Register User */
 app.post("/register", async (req, res) => {
