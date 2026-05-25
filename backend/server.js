@@ -59,7 +59,7 @@ app.post("/bookings", async (req, res) => {
     await booking.save();
 
     /* Send Email */
-    try {
+   /* try {
       await transporter.sendMail({
         from: "swathidbhat2006@gmail.com",
         to: req.body.email,
@@ -83,7 +83,7 @@ Total: ₹${req.body.total}
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
-});
+});*/
 
 /* Register User */
 app.post("/register", async (req, res) => {
