@@ -81,8 +81,7 @@ function LoginModal({
       try {
 
         await axios.post(
-          "http://localhost:5000/register",
-          {
+"https://cinibook-pro.onrender.com/register",          {
             username:
               email.split("@")[0],
 
