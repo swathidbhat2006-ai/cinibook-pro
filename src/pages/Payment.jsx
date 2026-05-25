@@ -55,7 +55,7 @@ function Payment() {
     try {
 
       await axios.post(
-        "http://localhost:5000/bookings",
+        "https://cinibook-pro.onrender.com/bookings",
         {
           movie: movie.title,
           theatre,

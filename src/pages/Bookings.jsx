@@ -23,8 +23,7 @@ function Bookings() {
 
         const response =
           await axios.get(
-            "http://localhost:5000/bookings"
-          );
+"https://cinibook-pro.onrender.com/bookings"          );
 
         setBookings(
           response.data
@@ -45,8 +44,7 @@ function Bookings() {
       try {
 
         await axios.delete(
-          `http://localhost:5000/bookings/${id}`
-        );
+"https://cinibook-pro.onrender.com/bookings/${id}"    );
 
         fetchBookings();
 
