@@ -50,7 +50,7 @@ function Payment() {
           email: localStorage.getItem("userEmail"),
         },
         {
-          timeout: 30000, // 30 second timeout — handles Render cold start
+          timeout: 60000, // 30 second timeout — handles Render cold start
         }
       );
 
